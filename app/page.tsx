@@ -38,16 +38,16 @@ export default function Home() {
             </span>
           </h1>
           <div className="flex gap-4">
-            <a className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75">
+            <a href="https://x.com/CHDINES95141791" className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75">
               <Twitter className="w-5" /> Twitter
             </a>
             <a className="text flex gap-1 hover:text-pink-600 font-poppins font-medium transition-all delay-75">
               <Instagram className="w-5" /> Instagram
             </a>
-            <a className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75">
+            <a href="https://www.linkedin.com/in/dinesh-babu-cheemaladari-4b9902136/" className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75">
               <Linkedin className="w-5" /> LinkedIn
             </a>
-            <a className="text flex gap-1 hover:text-gray-400 font-poppins font-medium transition-all delay-75">
+            <a href="https://github.com/chdineshbabu/" className="text flex gap-1 hover:text-gray-400 font-poppins font-medium transition-all delay-75">
               <Github className="w-5" /> Github
             </a>
           </div>
