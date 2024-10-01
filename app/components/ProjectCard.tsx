@@ -1,5 +1,5 @@
 import { LinkPreview } from "@/components/ui/link-preview";
-import { CalendarDays, Globe, Code, Tag } from "lucide-react";
+import { CalendarDays, Code, Tag } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
