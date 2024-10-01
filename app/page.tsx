@@ -1,25 +1,21 @@
 import Image from "next/image";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import profile from "./ProfileDB.jpg";
-import { Twitter, Instagram, Github, Linkedin } from "lucide-react";
+import {
+  Twitter,
+  Instagram,
+  Github,
+  Linkedin,
+  ExternalLink,
+} from "lucide-react";
 import CompactJobExperienceCard from "./components/CompactJobExperienceCard";
 import ProjectCard from "./components/ProjectCard";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function Home() {
   return (
     <div>
-      <div className="flex justify-between nav">
-        <div>
-          <h1 className="font-poppins opacity-75 hover:text-sky-300 transition-all delay-75 font-medium text-xl">
-            DINESH BABU
-          </h1>
-        </div>
-        <div className="font-poppins  gap-3 items-end opacity-75 text-lg flex cursor-pointer">
-          <a href="/projects">Projects</a>
-          <a href="https://drive.google.com/file/d/1oaqENrqKdB07KpNqcjNhQze8_4gXleDv/view?usp=drive_link" target="_blank">Resume</a>
-          <a>Contact</a>
-        </div>
-      </div>
+
       {/* ---------navbar---------- */}
       <div className="py-28 flex flex-col lg:flex-row lg:text-left text-center items-center gap-8">
         <Image
@@ -38,16 +34,25 @@ export default function Home() {
             </span>
           </h1>
           <div className="flex gap-4">
-            <a href="https://x.com/CHDINES95141791" className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75">
+            <a
+              href="https://x.com/CHDINES95141791"
+              className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75"
+            >
               <Twitter className="w-5" /> Twitter
             </a>
             <a className="text flex gap-1 hover:text-pink-600 font-poppins font-medium transition-all delay-75">
               <Instagram className="w-5" /> Instagram
             </a>
-            <a href="https://www.linkedin.com/in/dinesh-babu-cheemaladari-4b9902136/" className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75">
+            <a
+              href="https://www.linkedin.com/in/dinesh-babu-cheemaladari-4b9902136/"
+              className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75"
+            >
               <Linkedin className="w-5" /> LinkedIn
             </a>
-            <a href="https://github.com/chdineshbabu/" className="text flex gap-1 hover:text-gray-400 font-poppins font-medium transition-all delay-75">
+            <a
+              href="https://github.com/chdineshbabu/"
+              className="text flex gap-1 hover:text-gray-400 font-poppins font-medium transition-all delay-75"
+            >
               <Github className="w-5" /> Github
             </a>
           </div>
@@ -55,7 +60,7 @@ export default function Home() {
       </div>
       {/*--------------Hero ---------------------- */}
       <div>
-        <h1 className="text-2xl font-semibold font-Inconsolata p">
+        <h1 className="text-2xl font-semibold text-sky-600 font-Inconsolata p">
           &gt;_Introduction
         </h1>
         <p className="font-roboto py-4 text-justify text-base opacity-75">
@@ -69,66 +74,117 @@ export default function Home() {
           innovative digital experiences.
         </p>
       </div>
+      <br />
       {/*------------Intro-------------------------*/}
       <div className="py-6">
-        <h1 className="text-2xl font-semibold font-Inconsolata p">
-        &gt;_Experience
+        <h1 className="text-2xl text-sky-600 font-semibold font-Inconsolata p">
+          &gt;_Experience
         </h1>
         <CompactJobExperienceCard
-        title="Full Stack Developer Intern"
-        company="Sustally Inc."
-        startDate="Jul 2023"
-        endDate="Mar 2024"
-        description="Led the creation of a sophisticated website using React.js, Node.js, and TailwindCSS, showcasing advanced web development skills. Successfully completed projects on time with a strong focus on teamwork and quality. Developed a company's primary website during an internship, demonstrating professional expertise. Proactively integrated tools like a chatbot to enhance functionality and user engagement, emphasizing initiative and impactful development."
-        skills={["Next Js", "Node Js", "MongoDB", "Firebase","Express Js","CI/CD"]}
-      />
+          title="Full Stack Developer Intern"
+          company="Sustally Inc."
+          startDate="Jul 2023"
+          endDate="Mar 2024"
+          description="Led the creation of a sophisticated website using React.js, Node.js, and TailwindCSS, showcasing advanced web development skills. Successfully completed projects on time with a strong focus on teamwork and quality. Developed a company's primary website during an internship, demonstrating professional expertise. Proactively integrated tools like a chatbot to enhance functionality and user engagement, emphasizing initiative and impactful development."
+          skills={[
+            "Next Js",
+            "Node Js",
+            "MongoDB",
+            "Firebase",
+            "Express Js",
+            "CI/CD",
+          ]}
+        />
       </div>
+      <br />
       {/*-------------------Exprarice ---------------- */}
       <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-semibold font-Inconsolata ">
-        &gt;_Previous Work
+        <h1 className="text-2xl text-sky-600 font-semibold font-Inconsolata ">
+          &gt;_Previous Work
         </h1>
         <ProjectCard
-        title="TokenForge(Token Creation on Solana Blockchain)"
-        startDate="Sep 2024"
-        endDate="Present"
-        description="Create and manage tokens on the Solana blockchain effortlessly. Generate metadata-rich tokens for seamless integration and enhanced functionality within your applications."
-        skills={["Next.js", "Solana", "Tailwind.css"]}
-        deployedLink="https://keyforge-seven.vercel.app/"
-        codeLink="https://github.com/chdineshbabu/tokenforge"
-      />
+          title="TokenForge(Token Creation on Solana Blockchain)"
+          startDate="Sep 2024"
+          endDate="Present"
+          description="Create and manage tokens on the Solana blockchain effortlessly. Generate metadata-rich tokens for seamless integration and enhanced functionality within your applications."
+          skills={["Next.js", "Solana", "Tailwind.css"]}
+          deployedLink="https://keyforge-seven.vercel.app/"
+          codeLink="https://github.com/chdineshbabu/tokenforge"
+        />
         <ProjectCard
-        title="KeyFordge(Solana HD Wallet)"
-        startDate="Sep 2024"
-        endDate="Sep 2024"
-        description="A Solana blockchain wallet app designed for secure account creation using mnemonic seed phrases, ensuring user-friendly access and management of their private and public keys."
-        skills={["Next.js", "Solana", "Tailwind.css"]}
-        deployedLink="https://keyforge-seven.vercel.app/"
-        codeLink="https://github.com/chdineshbabu/keyforge"
-      />
+          title="KeyFordge(Solana HD Wallet)"
+          startDate="Sep 2024"
+          endDate="Sep 2024"
+          description="A Solana blockchain wallet app designed for secure account creation using mnemonic seed phrases, ensuring user-friendly access and management of their private and public keys."
+          skills={["Next.js", "Solana", "Tailwind.css"]}
+          deployedLink="https://keyforge-seven.vercel.app/"
+          codeLink="https://github.com/chdineshbabu/keyforge"
+        />
       </div>
       {/*---------------------Projects----------------- */}
-      <br />
-      <br />
-      <br />
-      <hr className="w-full"/>
-      <br />
-      <div className="flex justify-between opacity-65">
-        <h1>@DINESH BABU</h1>
-        <div className="flex gap-4">
-            <a className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75">
-              <Twitter className="w-5" /></a>
-            <a className="text flex gap-1 hover:text-pink-600 font-poppins font-medium transition-all delay-75">
-              <Instagram className="w-5" />
+      <div>
+        <h1 className="text-2xl text-sky-600 font-semibold font-Inconsolata ">
+          &gt;_Certfications
+        </h1>
+        <div className="py-4">
+          <LinkPreview url="https://www.coursera.org/account/accomplishments/professional-cert/V7H2YU8HQR6U">
+            <div className=" flex justify-between hover:scale-105 transition-transform delay-100 border-b border-black dark:border-white py-4">
+              <h1 className="font-poppins text-2xl ">Google Cybersecurity</h1>
+              <ExternalLink />
+            </div>
+          </LinkPreview>
+        </div>
+        <div className="py-4">
+          <LinkPreview url="https://udemy-certificate.s3.amazonaws.com/image/UC-2e404cfb-cb8d-41ae-b161-3e37c1838dd2.jpg">
+            <div className=" flex justify-between hover:scale-105 transition-transform delay-100 border-b border-black dark:border-white py-4">
+              <h1 className="font-poppins text-2xl ">The Complete 2021 Web Development Bootcamp</h1>
+              <ExternalLink />
+            </div>
+          </LinkPreview>
+        </div>
+        <div className="py-4">
+          <LinkPreview url="https://drive.google.com/file/d/1n-Z3GI-WSa3Ua4yLrrpTUhvufYDWFylr/view">
+            <div className=" flex justify-between hover:scale-105 transition-transform delay-100 border-b border-black dark:border-white py-4">
+              <h1 className="font-poppins text-2xl ">CCSK v4.1 Foundation Training</h1>
+              <ExternalLink />
+            </div>
+          </LinkPreview>
+        </div>
+      </div>
+      <div>
+        <br />
+        <br />
+        <br />
+        <hr className="w-full" />
+        <br />
+        <div className="flex justify-between opacity-65">
+          <h1>@DINESH BABU</h1>
+          <div className="flex gap-4">
+            <a
+              href="https://x.com/CHDINES95141791"
+              className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75"
+            >
+              <Twitter className="w-5" />
             </a>
-            <a className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75">
+            <a className="text flex gap-1 hover:text-pink-600 font-poppins font-medium transition-all delay-75">
+              <Instagram className="w-5" />{" "}
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dinesh-babu-cheemaladari-4b9902136/"
+              className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75"
+            >
               <Linkedin className="w-5" />
             </a>
-            <a className="text flex gap-1 hover:text-gray-400 font-poppins font-medium transition-all delay-75">
+            <a
+              href="https://github.com/chdineshbabu/"
+              className="text flex gap-1 hover:text-gray-400 font-poppins font-medium transition-all delay-75"
+            >
               <Github className="w-5" />
             </a>
           </div>
+        </div>
       </div>
+
       <ThemeSwitcher />
     </div>
   );
