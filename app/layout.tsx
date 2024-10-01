@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "./Provider";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -49,6 +50,7 @@ export default function RootLayout({
       </div>
         {children}
       </body>
+      <ThemeSwitcher />
       </Providers>
     </html>
   );
