@@ -19,7 +19,7 @@ export default function CompactJobExperienceCard({
   skills = [],
 }: CompactJobExperienceProps) {
   return (
-    <div className="w-full my-4 overflow-hiddenshadow-lg rounded-lg">
+    <div className="w-full my-4 overflow-hiddenshadow-lg rounded-lg transition-all delay-150 hover:scale-105">
       <div className="">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
           <div>
@@ -34,7 +34,7 @@ export default function CompactJobExperienceCard({
             {startDate} - {endDate}
           </p>
         </div>
-        <p className="font-roboto py-4 text-justify text-lg opacity-75 mb-4">{description}</p>
+        <p className="font-roboto py-2 text-justify text-base opacity-75 mb-4">{description}</p>
         {skills.length > 0 && (
           <div className="flex dark:text-slate-800 flex-wrap gap-2">
             {skills.map((skill, index) => (

@@ -26,7 +26,7 @@ export function ThemeSwitcher() {
           }`}
         />
         <MoonStar
-          className={`absolute h-6 w-6 text-black text-primary transition-transform duration-500 ease-in-out ${
+          className={`absolute h-6 w-6 text-black  transition-transform duration-500 ease-in-out ${
             theme === "dark" ? "rotate-0 scale-100" : "rotate-90 scale-0"
           }`}
         />

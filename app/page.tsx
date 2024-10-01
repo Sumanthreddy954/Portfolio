@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ThemeSwitcher } from "./ThemeSwitcher";
-import profile from "./profile.jpg";
+import profile from "./ProfileDB.jpg";
 import { Twitter, Instagram, Github, Linkedin } from "lucide-react";
 import CompactJobExperienceCard from "./components/CompactJobExperienceCard";
 import ProjectCard from "./components/ProjectCard";
@@ -15,21 +15,21 @@ export default function Home() {
           </h1>
         </div>
         <div className="font-poppins  gap-3 items-end opacity-75 text-lg flex cursor-pointer">
-          <a>Projects</a>
-          <a>Resume</a>
+          <a href="/projects">Projects</a>
+          <a href="https://drive.google.com/file/d/1oaqENrqKdB07KpNqcjNhQze8_4gXleDv/view?usp=drive_link" target="_blank">Resume</a>
           <a>Contact</a>
         </div>
       </div>
       {/* ---------navbar---------- */}
-      <div className="py-28 flex items-center gap-8">
+      <div className="py-28 flex flex-col lg:flex-row lg:text-left text-center items-center gap-8">
         <Image
-          className="rounded-full border-2 border-pink-700"
+          className="rounded-full border-2 hover:border-4 hover:border-sky-600 hover:border-y-pink-700 transition-all delay-75 border-pink-700"
           src={profile}
           height={150}
           width={150}
           alt="some"
         />
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 lg:items-start items-center">
           <h1 className="text-3xl font-roboto leading-relaxed font-semibold">
             <span>Hey, I&apos;m Dinesh Babu.</span>
             <span className="opacity-65">
@@ -42,7 +42,7 @@ export default function Home() {
               <Twitter className="w-5" /> Twitter
             </a>
             <a className="text flex gap-1 hover:text-pink-600 font-poppins font-medium transition-all delay-75">
-              <Instagram Twitter className="w-5" /> Instagram
+              <Instagram className="w-5" /> Instagram
             </a>
             <a className="text flex gap-1 hover:text-sky-600 font-poppins font-medium transition-all delay-75">
               <Linkedin className="w-5" /> LinkedIn
@@ -58,7 +58,7 @@ export default function Home() {
         <h1 className="text-2xl font-semibold font-Inconsolata p">
           &gt;_Introduction
         </h1>
-        <p className="font-roboto py-4 text-justify text-lg opacity-75">
+        <p className="font-roboto py-4 text-justify text-base opacity-75">
           Versatile full-stack web developer with a strong background in modern
           web technologies, DevOps practices, and blockchain solutions. Adept at
           creating scalable, high-performance applications using React, Node.js,
