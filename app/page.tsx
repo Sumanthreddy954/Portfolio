@@ -108,8 +108,8 @@ export default function Home() {
           endDate="Present"
           description="Create and manage tokens on the Solana blockchain effortlessly. Generate metadata-rich tokens for seamless integration and enhanced functionality within your applications."
           skills={["Next.js", "Solana", "Tailwind.css"]}
-          deployedLink="https://keyforge-seven.vercel.app/"
-          codeLink="https://github.com/chdineshbabu/tokenforge"
+          deployedLink="https://forgetoken.vercel.app/"
+          codeLink="https://github.com/chdineshbabu/tokenlp"
         />
         <ProjectCard
           title="KeyFordge(Solana HD Wallet)"

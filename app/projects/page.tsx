@@ -15,8 +15,8 @@ function page() {
         projectNumber="01"
         projectName="TokenForge"
         description="Create and manage tokens on the Solana blockchain effortlessly. Generate metadata-rich tokens for seamless integration and enhanced functionality within your applications."
-        imageSrc="https://dineshbabudev.vercel.app/"
-        codeLink="https://github.com/chdineshbabu/tokenforge"
+        imageSrc="https://forgetoken.vercel.app/"
+        codeLink="https://github.com/chdineshbabu/tokenlp"
         moreProjectsLink="/more-projects"
       />
       <ProjectShowcase
