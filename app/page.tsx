@@ -103,6 +103,15 @@ export default function Home() {
           &gt;_Previous Work
         </h1>
         <ProjectCard
+          title="GenCerti(Blockchain based Certification)"
+          startDate="Sep 2024"
+          endDate="Sep 2024"
+          description="GenCerti is an innovative blockchain-based application designed to simplify the process of creating, issuing, and validating certificates. The app ensures that certificates are tamper-proof, easily shareable, and verifiable. "
+          skills={["Next.js", "Etherum","MongoDb", "Tailwind.css"]}
+          deployedLink="https://gencerti.vercel.app/"
+          codeLink="https://github.com/chdineshbabu/genCerti"
+        />
+        <ProjectCard
           title="TokenForge(Token Creation on Solana Blockchain)"
           startDate="Sep 2024"
           endDate="Present"
@@ -120,6 +129,7 @@ export default function Home() {
           deployedLink="https://keyforge-seven.vercel.app/"
           codeLink="https://github.com/chdineshbabu/keyforge"
         />
+
       </div>
       {/*---------------------Projects----------------- */}
       <div>

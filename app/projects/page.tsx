@@ -13,6 +13,14 @@ function page() {
       </div>
       <ProjectShowcase
         projectNumber="01"
+        projectName="GenCerti"
+        description="GenCerti is an innovative blockchain-based application designed to simplify the process of creating, issuing, and validating certificates. The app ensures that certificates are tamper-proof, easily shareable, and verifiable."
+        imageSrc="https://gencerti.vercel.app/"
+        codeLink="https://github.com/chdineshbabu/genCerti"
+        moreProjectsLink="/more-projects"
+      />
+      <ProjectShowcase
+        projectNumber="02"
         projectName="TokenForge"
         description="Create and manage tokens on the Solana blockchain effortlessly. Generate metadata-rich tokens for seamless integration and enhanced functionality within your applications."
         imageSrc="https://forgetoken.vercel.app/"
@@ -20,7 +28,7 @@ function page() {
         moreProjectsLink="/more-projects"
       />
       <ProjectShowcase
-        projectNumber="02"
+        projectNumber="03"
         projectName="KeyForge"
         description="A Solana blockchain wallet app designed for secure account creation using mnemonic seed phrases, ensuring user-friendly access and management of their private and public keys."
         imageSrc="https://keyforge-seven.vercel.app/"
@@ -28,7 +36,7 @@ function page() {
         moreProjectsLink="/more-projects"
       />
       <ProjectShowcase
-        projectNumber="03"
+        projectNumber="04"
         projectName="CryptoPay"
         description="A Solana blockchain wallet app designed for secure account creation using mnemonic seed phrases, ensuring user-friendly access and management of their private and public keys."
         imageSrc="https://cryptopay-sable.vercel.app/"
@@ -36,7 +44,7 @@ function page() {
         moreProjectsLink="/more-projects"
       />
       <ProjectShowcase
-        projectNumber="04"
+        projectNumber="05"
         projectName="CryptoLottery"
         description="A Solana blockchain wallet app designed for secure account creation using mnemonic seed phrases, ensuring user-friendly access and management of their private and public keys."
         imageSrc="https://crypto-lottery-xi.vercel.app/"
@@ -44,7 +52,7 @@ function page() {
         moreProjectsLink="/more-projects"
       />
             <ProjectShowcase
-        projectNumber="05"
+        projectNumber="06"
         projectName="Blog site"
         description="A Solana blockchain wallet app designed for secure account creation using mnemonic seed phrases, ensuring user-friendly access and management of their private and public keys."
         imageSrc="https://blog-site-ten-neon.vercel.app/"
@@ -52,7 +60,7 @@ function page() {
         moreProjectsLink="/more-projects"
       />
       <ProjectShowcase
-        projectNumber="06"
+        projectNumber="07"
         projectName="Rental"
         description="A Solana blockchain wallet app designed for secure account creation using mnemonic seed phrases, ensuring user-friendly access and management of their private and public keys."
         imageSrc="https://rental-eight-xi.vercel.app/"

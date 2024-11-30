@@ -33,9 +33,9 @@ export default function RootLayout({
       >
               <div className="flex justify-between nav">
         <div>
-          <h1 className="font-poppins opacity-75 hover:text-sky-300 transition-all delay-75 font-medium text-xl">
+          <a href="/" className="font-poppins opacity-75 hover:text-sky-300 transition-all delay-75 font-medium text-xl">
             DINESH BABU
-          </h1>
+          </a>
         </div>
         <div className="font-poppins  gap-3 items-end opacity-75 text-lg flex cursor-pointer">
           <a href="/projects">Projects</a>
