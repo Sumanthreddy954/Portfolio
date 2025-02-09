@@ -37,7 +37,7 @@ export default function RootLayout({
             DINESH BABU
           </a>
         </div>
-        <div className="font-poppins  gap-3 items-end opacity-75 text-lg flex cursor-pointer">
+        <div className="font-poppins font-light  gap-3 items-end opacity-75 text-lg flex cursor-pointer">
           <a href="/projects">Projects</a>
           <a
             href="https://drive.google.com/file/d/1oaqENrqKdB07KpNqcjNhQze8_4gXleDv/view?usp=drive_link"

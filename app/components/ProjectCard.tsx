@@ -30,12 +30,12 @@ export default function ProjectCard({
   codeLink: "https://github.com/username/ecommerce-project",
 }) {
   return (
-    <div className="w-full py-2 rounded-lg transition-all delay-150 hover:scale-105">
+    <div className="w-full py-0 rounded-lg transition-all delay-150 hover:scale-105">
       {deployedLink ? (
         <LinkPreview url={deployedLink} className="">
           <div className="">
             <div className="flex justify-between items-end">
-              <h2 className="text-xl font-bold hover:text-sky-600">{title}</h2>
+              <h2 className="text-xl font- hover:text-sky-600">{title}</h2>
               <div className="text-sm opacity-65 flex items-center">
                 <CalendarDays className="mr-1 h-4 w-4" />
                 {startDate} - {endDate}
@@ -54,10 +54,10 @@ export default function ProjectCard({
       )}
 
       <div className="py-4">
-        <p className="text-base opacity-65 mb-4">{description}</p>
+        {/* <p className="text-base opacity-65 mb-4">{description}</p> */}
         <div className="flex justify-between items-center">
           {skills.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mb-0">
               {skills.map((skill, index) => (
                 <span
                   key={index}
@@ -74,9 +74,9 @@ export default function ProjectCard({
               href={codeLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+              className="inline-flex items-center px-2 py-1 border border-gray-300 shadow-sm text-xs font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
             >
-              <Code className="mr-2 h-4 w-4" />
+              <Code className="mr-2 h-3 w-3" />
               View Code
             </a>
           )}
