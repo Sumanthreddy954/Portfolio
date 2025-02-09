@@ -4,7 +4,7 @@ export default function TechStack() {
     ]
   
     return (
-      <div className="bg-black pl-0 p-4 flex flex-col gap-2">
+      <div className="dark:bg-black bg-white pl-0 p-4 flex flex-col gap-2">
         {technologies.map((row, rowIndex) => (
           <div key={rowIndex} className="flex flex-wrap gap-2">
             {row.map((tech) => (
