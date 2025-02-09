@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import profile from "./ProfileDB.jpg";
 import {
@@ -13,10 +13,87 @@ import ProjectCard from "./components/ProjectCard";
 import { LinkPreview } from "@/components/ui/link-preview";
 import ExperienceItem from "./components/Experince";
 import TechStack from "./components/TechStack";
+import { FloatingDock } from "@/components/ui/floating-dock";
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconExchange,
+  IconHome,
+  IconNewSection,
+  IconTerminal2,
+} from "@tabler/icons-react";
+import Image from "next/image";
 
+const links = [
+  {
+    title: "Home",
+    icon: (
+      <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+
+  {
+    title: "Products",
+    icon: (
+      <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+  {
+    title: "Components",
+    icon: (
+      <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+  {
+    title: "Aceternity UI",
+    icon: (
+      <Image
+        src="https://assets.aceternity.com/logo-dark.png"
+        width={20}
+        height={20}
+        alt="Aceternity Logo"
+      />
+    ),
+    href: "#",
+  },
+  {
+    title: "Changelog",
+    icon: (
+      <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+
+  {
+    title: "Twitter",
+    icon: (
+      <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+  {
+    title: "GitHub",
+    icon: (
+      <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+];
 export default function Home() {
   return (
     <div>
+      <div className="w-full flex justify-center">
+      <div className="fixed bottom-4 z-50">
+      <FloatingDock
+        mobileClassName="translate-y-20" // only for demo, remove for production
+        items={links}
+      />
+      </div>
+      </div>
+
       {/* ---------navbar---------- */}
       <div className="py-16 flex flex-col lg:flex-row lg:text-left text-center items-center gap-8">
         <Image

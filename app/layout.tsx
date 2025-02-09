@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "./Provider";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import { FloatingDock } from "@/components/ui/floating-dock";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,29 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black bg-white transition-all delay-75 mx-4 lg:mx-96 px-6 my-12 dark:text-white text-black`}
-      >
-              <div className="flex justify-between nav">
-        <div>
-          <a href="/" className="font-poppins opacity-75 hover:text-sky-300 transition-all delay-75 font-medium text-xl">
-            DINESH BABU
-          </a>
-        </div>
-        <div className="font-poppins font-light  gap-3 items-end opacity-75 text-lg flex cursor-pointer">
-          <a href="/projects">Projects</a>
-          <a
-            href="https://drive.google.com/file/d/1oaqENrqKdB07KpNqcjNhQze8_4gXleDv/view?usp=drive_link"
-            target="_blank"
-          >
-            Resume
-          </a>
-          <a href="mailto:chdinesh4128@gmail.com">Contact</a>
-        </div>
-      </div>
-        {children}
-      </body>
-      <ThemeSwitcher />
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black bg-white transition-all delay-75 mx-4 lg:mx-96 px-6 my-12 dark:text-white text-black`}
+        >
+          {children}
+        </body>
+        <ThemeSwitcher />
       </Providers>
     </html>
   );
