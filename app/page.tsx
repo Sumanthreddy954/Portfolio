@@ -81,19 +81,19 @@ export default function Home() {
           &gt;_Experience
         </h1>
         <div className="flex flex-col gap-2">
+        <ExperienceItem
+            company="Warlands Corp."
+            role="Blockchain Developer"
+            dateRange="Jan 2025 - Present"
+            tags={["Nextjs", "Solidity", "Firebase", "Solana"]}
+            logoUrl="https://media.licdn.com/dms/image/v2/C4E0BAQGMaDiYFM_Cwg/company-logo_200_200/company-logo_200_200/0/1651565665971/warlands_nft_logo?e=1747267200&v=beta&t=rHn5IN8d4mePRGqdfbSn-peqIRQnJT60e_oiXvd-K40"
+          />
           <ExperienceItem
             company="Sustally Inc."
             role="Fullstack Developer Intern"
             dateRange="July 2023 - March 2024"
             tags={["Nextjs", "MongoDb", "Langchain"]}
             logoUrl="https://media.licdn.com/dms/image/v2/D4E0BAQG6v9wMkNg5bA/company-logo_200_200/company-logo_200_200/0/1701914172156/sustally_logo?e=1747267200&v=beta&t=E_hHhMWZooSak4KPwZOCVCOz9Cfte7mg11RZzYDO9Ws"
-          />
-          <ExperienceItem
-            company="Warlands Corp."
-            role="Blockchain Developer"
-            dateRange="Jan 2025 - Present"
-            tags={["Nextjs", "Solidity", "Firebase", "Solana"]}
-            logoUrl="https://media.licdn.com/dms/image/v2/C4E0BAQGMaDiYFM_Cwg/company-logo_200_200/company-logo_200_200/0/1651565665971/warlands_nft_logo?e=1747267200&v=beta&t=rHn5IN8d4mePRGqdfbSn-peqIRQnJT60e_oiXvd-K40"
           />
         </div>
       </div>
@@ -125,7 +125,7 @@ export default function Home() {
         <ProjectCard
           title="TokenForge(Token Creation on Solana Blockchain)"
           startDate="Sep 2024"
-          endDate="Present"
+          endDate="Oct 2024"
           description="Create and manage tokens on the Solana blockchain effortlessly. Generate metadata-rich tokens for seamless integration and enhanced functionality within your applications."
           skills={["Next.js", "Solana", "Tailwind.css"]}
           deployedLink="https://forgetoken.vercel.app/"
