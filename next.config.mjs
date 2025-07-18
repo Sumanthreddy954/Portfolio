@@ -5,6 +5,7 @@ const nextConfig = {
         "api.microlink.io", // Microlink Image Preview
         "media.licdn.com",
         "assets.aceternity.com",
+        "i0.wp.com",
       ],
     },
   };

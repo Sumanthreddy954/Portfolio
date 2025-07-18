@@ -29,8 +29,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Dinesh's Resume",
-  description: "This CH Dinesh babu resume",
+  title: "Sumanth's Portfolio",
+  description: "This Sumanth Reddy's resume",
 };
 const links = [
   {
@@ -53,28 +53,22 @@ const links = [
     icon: (
       <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "https://drive.google.com/file/d/1oaqENrqKdB07KpNqcjNhQze8_4gXleDv/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1l3qa3p5TgyejNgzGifWPNdCySobtVYfm/view?usp=sharing",
   },
   {
     title: "LinkedIn",
     icon: (
       <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "https://www.linkedin.com/in/dinesh-babu-cheemaladari-4b9902136/",
+    href: "https://www.linkedin.com/in/sumanthreddy-b1aa1627b/",
   },
-  {
-    title: "Twitter",
-    icon: (
-      <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "https://x.com/CHDINES95141791",
-  },
+
   {
     title: "GitHub",
     icon: (
       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "https://github.com/chdineshbabu/",
+    href: "https://github.com/Sumanthreddy954/",
   },
 ];
 export default function RootLayout({

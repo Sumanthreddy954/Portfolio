@@ -1,6 +1,8 @@
 export default function TechStack() {
     const technologies = [
-      ["Next.js", "Solidity", "Typescript", "Node.js", "Express", "React", "TailwindCSS", "Rust","Postgres", "MongoDB", "Docker", "AWS", "Git", "Python"],
+      ["Python", "SQL", "Apache Spark", "ETL", "AWS", "Hadoop", "Power BI", "Git", "Bash Scripting", "Linux", "Data Analysis", "Databricks"
+
+],
     ]
   
     return (
