@@ -53,7 +53,7 @@ const links = [
     icon: (
       <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "https://drive.google.com/file/d/1l3qa3p5TgyejNgzGifWPNdCySobtVYfm/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1-J9a8skhTf8M6apfKcJI6YLsV5qoLJFi/view?usp=sharing",
   },
   {
     title: "LinkedIn",
