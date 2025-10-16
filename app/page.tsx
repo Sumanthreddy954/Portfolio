@@ -34,7 +34,7 @@ export default function Home() {
             <span>Hey, I&apos;m Sumanth Reddy 👋.</span>
             <br />
             <span className="opacity-65 font-light text-lg">
-              Data Analytics Maverick, ETL Pipeline Architect & Cloud Data Engineer.
+              Data Engineer | ETL, Analytics & Cloud Enthusiast.
             </span>
           </h1>
           {/* <div className="flex gap-4">
