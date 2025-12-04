@@ -110,7 +110,7 @@ export default function Home() {
         <ProjectCard
           title="Uber Ride Data Analytics"
           startDate="Nov 2024"
-          endDate="Dev 2024"
+          endDate="Dec 2024"
           description="Uber Ride Data Analytics is a cloud-powered project that analyzes Uber ride patterns, peak hours, and regional demand using GCP tools like Dataflow and BigQuery. 
           It delivers actionable insights through scalable pipelines and interactive visualizations."
           skills={["Python", "SQL", "Google Cloud Storage", "BigQuery", "Dataflow", "GCP"]}
